@@ -1,0 +1,14 @@
+#!/bin/bash
+
+
+
+for eachdir in $(ls ) ;do
+echo $eachdir
+if [ -d $(basename $eachdir) ];then
+cd  $(basename $eachdir)
+git pull
+cd ..
+else 
+ echo it is not a directory $eachdir
+fi
+done

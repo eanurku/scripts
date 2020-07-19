@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# create a repo-names file with each line as name of git repository
+
+for repo in $(cat repo-names ) ;do
+
+if [ ! -d $(basename $repo) ];then
+echo cloning $repo .... 
+git clone "https://github.com/eanurku/$repo.git"
+else 
+ echo $repo already exist,so just do git pull 
+fi
+done
