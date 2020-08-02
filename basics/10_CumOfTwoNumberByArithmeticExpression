@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo enter first num
+read first
+echo enter second num
+read second
+
+
+echo "sum of number=$((first+second))"

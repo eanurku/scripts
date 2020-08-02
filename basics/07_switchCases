@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo enter number btw 1-3
+
+read number
+
+case $number in 
+1) echo this is one ;;
+2)echo this is two;;
+3) echo this is three;;
+*) echo you have entered out of range;;
+esac
+

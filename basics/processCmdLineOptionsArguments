@@ -1,0 +1,14 @@
+#!/bin/bash 
+
+while [ "$1" != "" ];do
+
+case $1 in
+ -f|--file) shift
+            echo $1 
+            ;; 
+ -i|--interactive) echo interactive;;
+ -h|--help ) echo help;; 
+esac
+shift
+
+done

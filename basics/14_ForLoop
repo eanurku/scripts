@@ -1,0 +1,17 @@
+#!/bin/bash
+
+for eachdir in $(ls ) ;do
+echo $eachdir
+done
+
+echo ----------------------------
+
+for eachdir in $1/* ;do
+echo $eachdir
+done
+
+echo ----------------------------
+
+for eachdir in $1/* ;do
+echo "$(basename $eachdir)"
+done

@@ -1,0 +1,12 @@
+#!/bin/bash 
+
+set -x
+number=
+
+if [ "$number" = "1" ]; then
+ echo number is 1
+ echo so what
+else 
+echo number not 1
+fi
+set +x

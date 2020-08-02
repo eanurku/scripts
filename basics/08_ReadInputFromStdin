@@ -1,0 +1,18 @@
+#!/bin/bash
+echo -n  "Enter text>"
+read text
+echo "you have enter this $text"
+
+
+echo -n  "Enter text>"
+read 
+echo "you have enter this $REPLY"
+
+echo -n  "Enter text>"
+read -t 3 
+echo "you have enter this $REPLY"
+
+
+echo -n  "Enter text>"
+read -s -t 3
+echo "you have enter this $REPLY"

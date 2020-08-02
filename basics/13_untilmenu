@@ -1,0 +1,28 @@
+#!/bin/bash
+
+
+user_space(){
+echo user space
+du -s /home/*|sort -nr
+
+}
+uptime_status(){
+
+uptime
+}
+selection=
+until [ "$selection" -eq "0"  ];do
+
+echo "program menu
+      1) check user space
+      2) check uptime
+      0) exit "
+echo enter your selection 1,2,0
+read selection
+
+case $selection in
+1)user_space;;
+2)uptime_status;;
+0)exit;;
+esac
+done
