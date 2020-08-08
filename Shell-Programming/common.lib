@@ -1,0 +1,5 @@
+MESG="mesaage from common library"
+
+SUM(){
+echo $(($1+$2))
+}

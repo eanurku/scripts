@@ -1,0 +1,6 @@
+#!/bin/bash
+
+. ./common.lib
+
+echo $MESG
+echo $(SUM 2 4)

@@ -1,0 +1,11 @@
+#!/bin/bash
+#check if given character is vowel or consonent
+
+echo "Enter a character"
+read character
+
+case $character in
+[aeiouAEIOU]) echo it is a vowel;;
+*) echo it is consonent;;
+esac
+

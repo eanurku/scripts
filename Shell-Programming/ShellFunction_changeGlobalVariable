@@ -1,0 +1,15 @@
+#!/bin/bash
+change(){
+  num=100
+  x=12
+
+}
+
+echo "enter a number"
+read num
+
+x=1
+echo before :"num=$num,x=$x"
+
+change
+echo after: num=$num,x=$x

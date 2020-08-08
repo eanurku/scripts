@@ -1,0 +1,27 @@
+#!/bin/bash -x 
+
+add_a_user(){
+
+
+echo $1
+echo $2
+user=$1
+pass=$2
+shift;shift;
+echo $@
+
+ useradd  -c $@ $user 2>/dev/null
+ passwd  $user $pass 2>/dev/null
+if [ $? != 0 ];then
+ echo "command failed"
+ return 22
+fi
+echo "it should not be executed" 
+}
+
+add_a_user nu  anurag  i am next user of this system 
+returnCode=$?
+
+if [ $returnCode = 22 ];then
+echo  $returnCode:"user does not exist" 
+fi
