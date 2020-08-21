@@ -1,4 +1,5 @@
 #!/bin/bash
+echo arguments are=[ $@ ]
 echo shelll arguments=$#
 echo '$0'=$0 
 echo '$1'=$1 

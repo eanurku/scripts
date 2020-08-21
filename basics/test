@@ -1,0 +1,9 @@
+#!/bin/bash
+: '
+ifjiomf
+fmekrmfpf
+efpoemrpfkm
+'
+
+((sum=10+20))
+echo $sum

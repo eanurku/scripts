@@ -1,0 +1,29 @@
+#!/bin/bash
+
+echo Enter First Number
+read num1
+echo Enter Second Number
+read num2 
+
+
+hcf(){
+ if [ $1 -ge $2 ];then
+    echo "$(hcf $2 $1 )"
+    return 0
+fi
+
+if [ $1 = 0 ];then
+ echo $2
+ return 0
+fi
+
+reminder=$(($2 % $1))
+res=$(hcf $reminder $1) 
+
+echo $res
+}
+
+
+result=$(hcf $num1 $num2)
+echo $result
+

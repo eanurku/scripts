@@ -1,0 +1,17 @@
+#!/bin/bash
+# run with argument:  X=23 Y=24
+
+for arg in $@ ;do
+ var=$(echo $arg|cut -f1 -d "=")
+ val=$(echo $arg|cut -d "=" -f2)
+
+ case $var  in
+  X) x=$val;;
+  Y) y=$val;;
+  *)
+ esac
+
+done
+
+echo $((x+y))
+
