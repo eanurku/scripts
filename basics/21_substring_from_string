@@ -1,0 +1,5 @@
+#!/bin/bash
+str="it is as important as you"
+
+echo ${str:0:5}
+

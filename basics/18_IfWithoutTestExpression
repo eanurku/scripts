@@ -1,0 +1,25 @@
+#!/bin/bash -x
+
+method1(){
+echo 70
+return 0 
+
+}
+method2(){
+echo 80
+return 10
+}
+
+if method1 ;then
+echo method1 returned status from if block=$?
+else
+echo method1 returned status from else block=$?
+fi
+
+
+
+if method2 ;then
+echo method2 returned status from if block=$?
+else
+echo method2 returned status from else block=$?
+fi

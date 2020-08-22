@@ -1,0 +1,21 @@
+#!/bin/bash
+
+str1="abc"
+str2="def"
+str3="ghi"
+
+str2+=str1
+str3+=str2
+
+echo str1=$str1
+echo str2=$str2
+echo str3=$str3
+
+
+var=""
+for item in 'one' 'two';do
+var+=$item
+var+=" "
+done
+
+echo var=$var

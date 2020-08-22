@@ -1,0 +1,13 @@
+#!/bin/bash
+str1="abc"
+str2="xyz"
+str3="rrrrr""sssss"
+abcxyz="pqr"
+
+
+echo 1=$str1$str2
+echo 2=$str3
+echo 3=$str1World
+echo 4=${str1}World
+
+echo 5=${${str1}xyz}

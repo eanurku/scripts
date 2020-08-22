@@ -1,0 +1,67 @@
+#!/bin/bash
+
+#check if string are equal
+
+str1="abc"
+str2="abc"
+#method 1(=)
+if [ $str1 = $str2 ];then
+ echo string are equal
+else
+ echo string are unequal
+fi
+
+
+#method 1(==)
+if [[ $str1 == $str2 ]];then
+ echo string are equal
+else
+ echo string are unequal
+fi
+
+#check if string contains a substring 
+
+substring="linux"
+str4="this is about linux not unix"
+
+#method 1(== and [[)
+
+if [[ $substring == *"linux"* ]];then
+echo "substring found in string"
+else
+echo "substring not found in string"
+fi
+
+#method 2(=~ by regular expression) 
+
+if [[ $substring =~ .*"linux".* ]];then
+echo "substring found in string"
+else
+echo "substring not found in string"
+fi
+
+#check if string is empty
+var1=""
+
+if [ -z $var1 ];then
+echo "string is empty"
+fi
+
+#check if string is not empty
+
+if [ -n $var2 ];then
+echo "string is not empty"
+fi
+
+#lexicographic comparision of two string
+
+s1="gmonu"
+s2="monu"
+
+if [[ $s1 < $s2 ]];then
+echo "s1<s2"
+fi
+
+if [[ $s1 > $s2 ]];then
+echo "s1>s2"
+fi 

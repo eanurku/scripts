@@ -1,0 +1,61 @@
+#!/bin/bash
+
+#expr command
+#space needed between operand,operator 
+echo ------------------------------
+expr 10+20
+expr 20+30
+
+expr 10 + 20
+expr 20 + 30
+
+echo `expr 13 + 32`
+echo $(expr 12 + 14)
+
+#let command
+#space not allowed  between operand,operator
+echo ----------------------------
+let val=10+20
+let "val1=12+12"
+let 'val2=val1+12+12'
+let val++
+let "val++"
+
+echo $val
+echo $val1
+echo $val2
+
+
+#double parenthesis
+#space,no space,++,-- all allowed
+echo ----------------------------
+
+#format 1
+ ((val1=12+12))
+ ((val2=12 + 12))
+ ((val1++))
+ ((val2++))
+
+echo $val1
+echo $val2 
+
+var1=10
+var2=13
+
+((sum=var1+var2))
+echo $sum
+
+#format 2
+
+echo $((12+12))
+echo $((v1+=12))
+echo $((v2-=12))
+echo $((v1+v2))
+
+
+#floating point calculation
+echo ----------------------------
+
+echo 20/3 |bc
+echo 20/3 |bc -l
+echo "scale=2;20/3"|bc
