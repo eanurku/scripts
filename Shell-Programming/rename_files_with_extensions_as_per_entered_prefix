@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo Enter directory containing files with extensions 
+read dir
+
+echo enter extension for rename
+read extension
+
+echo enter prefix to be used with filename or press enter key for default prefix 
+read prefix
+
+for file in $dir/*.$extension;do
+if [ "$prefix" = "\n" ];then
+mv $file $prefix-$file
+else
+mv $file $(dirname $file)/$(date +%y)-$(date +%m)-$(date +%d)-$(basename $file) 
+fi
+done
+

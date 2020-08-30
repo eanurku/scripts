@@ -1,0 +1,11 @@
+#!/bin/bash
+
+function file_count(){
+
+local total_count=$(ls -l|wc -l)
+echo $total_count
+
+}
+file_count
+
+echo $total_count

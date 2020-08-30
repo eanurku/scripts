@@ -1,0 +1,41 @@
+#!/bin/bash
+
+: '
+
+install ssmtp ,mailUtils 
+
+create a file /etc/ssmtp/ssmtp.conf
+add below text in file for using gmail smtp server 
+--------
+UseSTARTTLS=YES
+FromLineOverride=YES
+root=admin@example.com
+mailhub=smtp.gmail.com:587
+AuthUser=username@gmail.com
+AuthPass=password
+---------
+update AuthUser and AuthrPass with values
+
+'
+
+# sendmail <recipient address> < <file haing subject and email body>
+
+sendmail anurags62@yahoo.com <email.txt 
+echo sendmail done
+
+#mail -s <subject> <recipient addreess>
+: ' above command will ask email body to be entered from standard input and hit "Ctrl+D" to send ' 
+#mail -s <subject> <recipient addreess> <<< "email body text by <<<" 
+#echo "email body by pipe"  |mail -s <subject> <recipient addreess>  
+#mail -s <subject> -a From:Admin <recipient addreess> <<< "email body text by <<<" 
+
+mail -s "from mail command" -a From:Admin anurags62@yahoo.com <<< "testing mail command"
+echo mail done
+
+
+#mailx command
+mailx -a "Content-Type: text/html" -s "sending by mailx" anurags62@yahoo.com <test.html
+echo mailx done
+
+#ssmtp command
+#mutt command

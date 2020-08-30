@@ -1,0 +1,9 @@
+#!/bin/bash
+
+function FUN(){
+
+echo "Sample Function with  parameter $1 $2"
+
+}
+
+FUN 12 13

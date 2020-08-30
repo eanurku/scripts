@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo dir base name is =$(basename $1)

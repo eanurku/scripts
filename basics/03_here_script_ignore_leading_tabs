@@ -1,0 +1,19 @@
+#!/bin/bash
+
+cat <<- EOF_FILE
+
+<html>
+<head>
+<title>
+    my sample ttl  
+	</title>
+</head>
+ 
+<body>
+   title HOSTNAME 
+ <p>TIME_STAMP</p>
+ <p>update on </p>
+	</body>
+	</html>
+
+EOF_FILE

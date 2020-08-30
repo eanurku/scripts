@@ -1,0 +1,10 @@
+#!/bin/bash -x
+
+ls /home
+
+ls /home/nu
+
+
+ls /home/monu
+
+

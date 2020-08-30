@@ -1,0 +1,19 @@
+#!/bin/bash
+
+cat << EOF_FILE
+
+ <html>
+ <head>
+   <title>
+   title 
+   </title>
+ </head>
+ 
+ <body>
+   title 
+   <p>paragraph</p>
+   <p>update </p>
+ </body>
+ </html>
+
+EOF_FILE
