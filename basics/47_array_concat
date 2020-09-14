@@ -1,0 +1,8 @@
+#!/bin/bash
+array1=(12 23 wew wewe ewew)
+
+array2=(12 23 wew wewe ewew)
+
+array3=(${array1[*]} ${array2[*]})
+
+echo ${array3[*]}

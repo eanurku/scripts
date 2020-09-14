@@ -1,0 +1,9 @@
+#!/bin/bash
+: '
+comment 1
+comment 2
+comment 3
+'
+
+((sum=10+20))
+echo $sum

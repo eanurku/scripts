@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#way 1
+array1=(qw wee eqwe 12 2w13)
+echo ${array1[*]}
+
+#way 2
+
+declare -a array2=(12 211 2121 211)
+echo ${array2[*]}
+
+#way 3
+
+array3[3]=123
+echo ${array3[*]}

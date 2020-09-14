@@ -1,0 +1,10 @@
+#!/bin/bash
+array=(12 13 14 15)
+
+echo before: ${array[*]}
+
+array=("${array[*]}" 18 19)
+
+
+echo after: ${array[*]}
+

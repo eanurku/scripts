@@ -1,0 +1,12 @@
+#!/bin/bash
+array=(12 13 43 121 21)
+
+newarray=("${array[@]}")
+
+echo ${newarray[*]}
+echo size=${#newarray[*]}
+
+newarray1=("${array[@]:0:$1}")
+
+echo ${newarray1[*]}
+echo size=${#newarray1[*]}

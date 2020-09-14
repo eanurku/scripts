@@ -1,0 +1,7 @@
+#!/bin/bash
+
+array=(12 13 24 34)
+unset array
+
+echo ${array[*]}
+echo size=${#array[*]}

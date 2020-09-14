@@ -1,0 +1,6 @@
+#!/bin/bash
+array=(12 23 wew wewe ewew)
+
+for line in ${array[*]};do
+echo $line
+done

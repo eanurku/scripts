@@ -1,0 +1,37 @@
+#!/bin/bash
+array=(12 13 14 15 16 19 144)
+
+#method 1
+
+echo before:
+echo  ${array[*]}
+echo array size=${#array[*]}
+echo value=${array[2]}
+
+unset array[2]
+
+echo after:
+echo  ${array[*]}
+echo value after unset=${array[2]}
+echo array size=${#array[*]}
+
+#method 2
+
+array=(12 13 14 15 16 19 144)
+echo enter pos of element where pos are  0,1,2...
+read pos
+
+echo before:
+echo  ${array[*]}
+echo array size=${#array[*]}
+echo value=${array[${pos}]}
+
+array=(${array[*]:0:$pos} ${array[*]:$(($pos+1))})
+
+echo after:
+echo  ${array[*]}
+echo value after unset=${array[2]}
+echo array size=${#array[*]}
+
+
+

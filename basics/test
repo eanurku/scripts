@@ -1,9 +1,5 @@
-#!/bin/bash
-: '
-ifjiomf
-fmekrmfpf
-efpoemrpfkm
-'
+15.12.141.121
+255.255.255
+255.255.255.255
+256.125.124.124
 
-((sum=10+20))
-echo $sum

@@ -1,0 +1,4 @@
+#!/bin/bash
+#find duplicated digits even separated by multiple spaces like 1134 4566 1234 4321
+# here 11,4 4,4 4 are duplicates 
+sed 's/\([0-9]\) \+\1/. ./g'  $2

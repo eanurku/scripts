@@ -1,0 +1,5 @@
+#!/bin/bash
+array=(anurag monu gonu sonu soni)
+
+echo ${array[@]/[ao]/O}
+
