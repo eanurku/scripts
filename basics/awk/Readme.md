@@ -11,7 +11,7 @@ In the above awk syntax:
     file – Input file.
     Single quotes around program is to avoid shell not to interpret any of its special characters.
 
-Awk Working Methodology
+Awk Working Methodology :
 
    1. Awk reads the input files one line at a time.
    2. For each line, it matches with given pattern in the given order, if matches performs the corresponding action.
@@ -25,14 +25,24 @@ Awk Working Methodology
 sample file:
 
 $cat employee.txt
+
 100  Thomas  Manager    Sales       $5,000
+
 200  Jason   Developer  Technology  $5,500
+
 300  Sanjay  Sysadmin   Technology  $7,000
+
 400  Nisha   Manager    Marketing   $9,500
+
 500  Randy   DBA        Technology  $6,000
 
 1.  print each line of a file
-   
-  awk '{print}' employee.txt
+
+awk '{print}' employee.txt
+
+2. 
+awk '/Thomas/,/Jason/' input_employee
+
+3.
 
 
