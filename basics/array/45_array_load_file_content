@@ -3,4 +3,5 @@ echo enter file path
 read file
 filecontent=($(cat $file))
 
+echo ${#filecontent[*]}
 echo ${filecontent[*]}
