@@ -1,0 +1,3 @@
+#!/bash/bin
+#find all users using /bin/bash
+awk -F ':' '$NF ~/\/bin\/bash/{print}' /etc/passwd

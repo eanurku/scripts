@@ -1,0 +1,2 @@
+#!/bash/bin
+awk '$1 > 200' input_employee 

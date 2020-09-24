@@ -1,0 +1,2 @@
+#!/bash/bin
+awk '{print FILENAME}' $1 $2

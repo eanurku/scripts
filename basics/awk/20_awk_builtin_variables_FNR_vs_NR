@@ -1,0 +1,2 @@
+#!/bash/bin
+awk '{print FILENAME,FNR,NR}' $1 $2

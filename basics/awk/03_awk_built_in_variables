@@ -1,0 +1,13 @@
+#!/bash/bin
+awk '{print $1,$2,"\t",$3}' $1
+
+echo ""
+
+awk '{print $0}' $1
+
+echo ""
+
+awk '{print $NF}' $1
+
+echo ""
+awk '{print "number of fields in line=",NF;}' $1

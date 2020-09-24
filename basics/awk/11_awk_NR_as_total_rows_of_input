@@ -1,0 +1,2 @@
+#!/bash/bin
+awk -f 11_averagemarks.awk input_student_testwise_marks

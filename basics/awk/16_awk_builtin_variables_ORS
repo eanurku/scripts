@@ -1,0 +1,10 @@
+#!/bash/bin
+awk 'BEGIN{
+RS="-\n";
+FS="\n";
+ORS="=";
+}
+{
+print $1,$2
+}' input_student_record_separatedby_doubleline 
+

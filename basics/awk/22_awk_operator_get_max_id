@@ -1,0 +1,2 @@
+#!/bash/bin
+awk -F ':' 'BEGIN{maxid=0} maxid <$3{maxid=$3}END{print maxid}' /etc/passwd

@@ -1,0 +1,2 @@
+#!/bash/bin
+awk 'BEGIN{count=0;} /Tech.*/{count++;} END{print "count=",count;}' input_employee

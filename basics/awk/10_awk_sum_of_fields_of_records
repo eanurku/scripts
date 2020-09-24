@@ -1,0 +1,2 @@
+#!/bash/bin
+awk -f 10_book_calculation.awk input_bookdetails 

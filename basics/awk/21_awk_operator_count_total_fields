@@ -1,0 +1,2 @@
+#!/bash/bin
+awk '{total+=NF}END{print "total=",total}' $1 

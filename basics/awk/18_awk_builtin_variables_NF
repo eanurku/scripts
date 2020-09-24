@@ -1,0 +1,8 @@
+#!/bash/bin
+awk 'BEGIN{
+}
+{
+print NR,"========>",NF;
+}
+END{
+}' input_bookdetails

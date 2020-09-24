@@ -1,2 +1,0 @@
-#!/bin/bash
-awk 'BEGIN {print "Name","\t","salary\n"} {print $2,$NF} END {print "\nReport printed..."}' $1 

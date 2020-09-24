@@ -1,0 +1,9 @@
+#!/bash/bin
+awk 'BEGIN{
+}
+{
+print NR,"------>",$0;
+}
+END{
+print "total record in file=",NR;
+}' input_bookdetails

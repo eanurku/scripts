@@ -1,0 +1,3 @@
+#!/bash/bin
+
+awk -f 8_grade.awk  input_student_records_grade

@@ -1,0 +1,5 @@
+#!/bash/bin
+
+awk 'BEGIN{FS=":"}{print$1,$2}' /etc/passwd
+echo "-----------------------"
+awk -F ':' '{print $1,$2}' /etc/passwd

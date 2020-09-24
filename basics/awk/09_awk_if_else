@@ -1,0 +1,3 @@
+#!/bash/bin
+
+awk -f 9_passfail.awk input_student_records_passfail
