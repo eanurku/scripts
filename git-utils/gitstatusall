@@ -1,0 +1,15 @@
+#!/bin/bash
+for eachdir in $(ls);do
+echo "---------------start of repository status for ----------->>>${eachdir}<<<<<<<<<"
+if [ -d $(basename $eachdir) ];then
+cd $(basename $eachdir)
+git status
+
+echo "---------------end  of repository status for ----------->>>${eachdir}<<<<<<<<<"
+
+cd ..
+else
+echo "it is not a git repo directory"
+fi
+done
+

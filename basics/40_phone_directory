@@ -1,0 +1,42 @@
+#!/bin/bash
+
+PHONELIST=./data/phone_list
+ 
+
+
+#add phone number
+#ph new <name> <number>
+
+#search phone number
+#ph name
+
+
+if [ $# -lt 1 ];then
+ echo "enter some argument to add phone numbers or search by name ??"
+ exit 1
+fi
+
+
+if [ $1 = "new" ];then
+ shift;
+
+ echo $* >>$PHONELIST
+ echo added $* to phone data base
+ exit 0
+fi 
+
+
+if [ ! -s $PHONELIST ];then
+ echo " no phone number in data base" 
+
+else
+ grep -i -q "$*" $PHONELIST
+ if [ $? -ne 0 ];then
+ echo " no names found!!" 
+ else
+  grep -i "$*" $PHONELIST 
+  echo "found!!"
+ fi
+
+fi
+
